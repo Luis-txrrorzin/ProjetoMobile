@@ -1,32 +1,60 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 type RootStackParamList = {
-  Login: undefined;
-  Home: undefined;
-  Detalhes: undefined;
-  CadastroUsuario: undefined;
-  CadastroNota: undefined;
-  ListarNota: undefined;
-};
+    Home: undefined;
+    Detalhes: undefined;
+    Login: undefined;
+    Cadastrar: undefined;
+    Esqueci: undefined;
+    CadastrarNota: undefined;
+    ListarNota: undefined;
+    CadastrarProduto: undefined;
+    CadastrarAtendimento: undefined;
+    ListarAtendimento: undefined;
+    AlterarNota: {id: string};
+    CadastrarCliente: undefined;
+    ListarCliente: undefined;
+    AlterarCliente: {id: string};
+  };
+  
+  
+  //HomeScreen
+  type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
-//HomeScreen
-type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
+  //LoginScreen
+  type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
-//LoginScreen
-type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>;
+  //CadastrarScreen
+  type CadastrarProps = NativeStackScreenProps<RootStackParamList, 'Cadastrar'>;
 
-//CadastroUsuario
-type CadastroUsuarioProps = NativeStackScreenProps<RootStackParamList, 'CadastroUsuario'>;
+  //EsqueciScreen
+  type EsqueciProps = NativeStackScreenProps<RootStackParamList, 'Esqueci'>;
 
-//CadastroUsuario
-type CadastrarNotaProps = NativeStackScreenProps<RootStackParamList, 'CadastroNota'>;
+  //CadastrarNotaScreen
+  type CadastrarNotaProps = NativeStackScreenProps<RootStackParamList, 'CadastrarNota'>;
 
-//ListarNotas
-type ListarNotasProps = NativeStackScreenProps<RootStackParamList, 'ListarNota'>;
+  //ListarNotaScreen
+  type ListarNotaProps = NativeStackScreenProps<RootStackParamList, 'ListarNota'>;
 
-export type { RootStackParamList, 
-  HomeProps, 
-  LoginProps,
-  CadastroUsuarioProps,
-  CadastrarNotaProps,
-  ListarNotasProps};
+  //CadastrarProdutoScreen
+  type CadastrarProdutoProps = NativeStackScreenProps<RootStackParamList, 'CadastrarProduto'>;
+
+  //CadastrarAtendimentoScreen
+  type CadastrarAtendimentoProps = NativeStackScreenProps<RootStackParamList, 'CadastrarAtendimento'>;
+
+  //ListarAtendimentoScreen
+  type ListarAtendimentoProps = NativeStackScreenProps<RootStackParamList, 'ListarAtendimento'>;
+
+  //AlterarNotaS
+  type AlterarNotaProps = NativeStackScreenProps<RootStackParamList, 'AlterarNota'>;
+  
+  //CadastrarClienteScreen
+  type CadastrarClienteProps = NativeStackScreenProps<RootStackParamList, 'CadastrarCliente'>;
+
+  //ListarNotaScreen
+  type ListarClienteProps = NativeStackScreenProps<RootStackParamList, 'ListarCliente'>;
+
+  //AlterarCliente
+  type AlterarClienteProps = NativeStackScreenProps<RootStackParamList, 'AlterarCliente'>;
+
+  export type {HomeProps, LoginProps, CadastrarProps, EsqueciProps, CadastrarNotaProps, ListarClienteProps, AlterarNotaProps, CadastrarClienteProps, ListarAtendimentoProps, CadastrarAtendimentoProps, ListarNotaProps, CadastrarProdutoProps, RootStackParamList, AlterarClienteProps};

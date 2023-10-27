@@ -1,12 +1,14 @@
 import { View } from "react-native";
-import Principal from "../layouts/Principal";
 import { HomeProps, LoginProps } from "../types";
-import TelaLogin from "../layouts/TelaLogin";
+import Principal from "../layouts/Principal";
+import TelaLogin from "../layouts/tela_login";
 
-const LoginScreen = ({ navigation, route }: LoginProps) => {
+const LoginScreen = ({ navigation, route }: LoginProps) =>{
     return (
-        <TelaLogin navigation={navigation} route={route} />
+      <View >
+          <TelaLogin navigation={navigation} route={route}/>
+      </View>
     );
-};
+  };
 
-export default LoginScreen;
+  export default LoginScreen;

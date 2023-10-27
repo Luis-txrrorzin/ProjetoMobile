@@ -1,12 +1,15 @@
 import { View } from "react-native";
-import Principal from "../layouts/Principal";
 import { HomeProps } from "../types";
-import TelaLogin from "../layouts/TelaLogin";
+import Principal from "../layouts/Principal";
+import TelaInicial from "../layouts/TelaInicial";
 
-const HomeScreen = ({ navigation, route }: HomeProps) => {
+const HomeScreen = ({ navigation, route }: HomeProps) =>{
     return (
-        <Principal navigation={navigation} route={route} />
+      <View >
+        <TelaInicial navigation={navigation} route={route} />
+        {/* <Principal navigation={navigation} route={route} /> */}
+      </View>
     );
-};
+  };
 
-export default HomeScreen;
+  export default HomeScreen;

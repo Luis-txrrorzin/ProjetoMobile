@@ -15,9 +15,14 @@ type ListaSectionProps = {
 const ListaSection = (props: ListaSectionProps) => {
     return <SectionList 
         sections={props.array} 
-        renderItem={({item}) => <Text style={styles.item}>{item.descricao}</Text>}
+        renderItem={({item}) => 
+            <Text style={styles.item}>
+                {item.descricao}
+            </Text>}
         renderSectionHeader={({section}) => (
-            <Text style={styles.sectionHeader}>{section.title}</Text>
+            <Text style={styles.sectionHeader}>
+                {section.title}
+            </Text>
           )}
         keyExtractor={item => `basicListEntry-${item}`}
     />  

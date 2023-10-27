@@ -1,11 +1,13 @@
-import { Text, View } from "react-native";
-import { CadastrarNotaProps, HomeProps, LoginProps } from "../types";
-import TelaCadastroNota from "../layouts/TelaCadastroNota";
+import { View } from "react-native";
+import { CadastrarNotaProps } from "../types";
+import TelaCadastroNotas from "../layouts/tela_cadastroNota";
 
-const CadastroNotaScreen = ({ navigation, route }: CadastrarNotaProps) => {
+const CadastrarNotaScreen = ({ navigation, route }: CadastrarNotaProps) =>{
     return (
-        <TelaCadastroNota navigation={navigation} route={route} />
+      <View >
+          <TelaCadastroNotas navigation={navigation} route={route}/>
+      </View>
     );
-};
+  };
 
-export default CadastroNotaScreen;
+  export default CadastrarNotaScreen;
